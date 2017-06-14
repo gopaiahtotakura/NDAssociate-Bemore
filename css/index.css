@@ -1,0 +1,36 @@
+ @font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/bebas_neue/BebasNeue.eot');
+	src: url('../fonts/bebas_neue/BebasNeue.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bebas_neue/ebasNeue.woff') format('woff'),
+		url('../fonts/bebas_neue/BebasNeue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('../fonts/quicksand/Quicksand-Regular.eot');
+	src: url('../fonts/quicksand/Quicksand-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/quicksand/Quicksand-Regular.woff') format('woff'),
+		url('../fonts/quicksand/Quicksand-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto/Roboto-Regular.eot');
+	src: url('../fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+		url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+/*@media screen and (min-width: 1200px){
+.navbar-container
+  width: 1256px !important
+}*/
+
+@import url("fonts/recvolt-icons/style.css");
+@import url("fonts/recvolt-icons/ie7/ie7.css");

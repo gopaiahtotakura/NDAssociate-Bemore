@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <script src="http://code.jquery.com/jquery.min.js">
+  </script>
+  <link href="img/Logo-hand.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+  </script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="fonts/ie7/ie7.css" rel="stylesheet">
+  <link href="fonts/recvolt-icons/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>RECVOLT</title>
+</head>
+<body>
+  <header>    
+  <nav class="navbar navbar-inverse navbar-fixed-top company-bg" role="navigation">
+    <div class="container navbar-container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand " href="#"><img src="img/icons/Nav%20Logo.png" class="logo-recvolt" width="100"></a>
+      </div>
+      <form class="navbar-form navbar-left" role="form">
+        <div class="form-group profile-search">
+          <div class="left-inner-addon">
+            <span class="icon-search search-icon"></span> <input class="form-control search" placeholder="Search for people, jobs" type="search">
+          </div>
+        </div><button class="btn add-job" type="button">Add a Job</button>
+      </form><!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav profile-info-list">
+        <li class="top">
+          <a href="#"><span class="icon-down-arrow down-icon"></span> <span class="icon-notification-bell notification-smallimg"></span></a> <span class="badge badge-notify">7</span>
+          <ul class="dropdown-menu" style="display:none;">
+            <li class="header">You have 5 notifications</li>
+            <li class="sub-li">
+              <!-- inner menu: contains the actual data -->
+              <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;">
+                <ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                  <li>
+                    <a href="#"><i class="fa fa-users text-aqua"></i> 5 new members joined today</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-users text-red"></i> 5 new members joined</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-shopping-cart text-green"></i> 25 sales made</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-user text-red"></i> You changed your username</a>
+                  </li>
+                </ul>
+                <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 195.122px;"></div>
+                <div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+              </div>
+            </li>
+            <li class="footer">
+              <a href="#">View all</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top">
+          <a href="#"><span class="icon-calendar notification-smallimg"></span></a>
+        </li>
+        <li class="profile-name">
+          <a href="#contact"><span>Welcome back John Doe</span> <span class="icon-up-arrow icon up-icon"></span></a>
+        </li>
+      </ul><img class="profile-img" src="img/doe.png"></div><!-- /.navbar-collapse -->
+    </div>
+  </nav><!--wrap the page content do not style this-->
+</header>
+  <div id="page-content">
+    <div class="container main-container">
+      <section class="section-container">
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="section-hedding">USER MANAGEMENT</h3>
+          </div>
+        </div>
+        <div class="row profile-row">
+          <div class="col-md-10 search-col">
+            <div class="inner-addon left-addon">
+              <span class="icon-search search-icon manage-icon"></span> <input class="form-control management-search" placeholder="Search by title,keyword" type="text">
+            </div>
+          </div>
+          <div class="col-md-2 user-more-filter-col">
+            <a class="user-more-filters" href="#">More filters</a>
+          </div>
+        </div>
+        <hr class="hr">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-hedding">COMPANY EMPLOYEES</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 com-xs-2"><img height="150" src="img/doe.png" width="170"></div>
+          <div class="col-md-10 com-xs-10 user-info">
+            <div class="row">
+              <div class="col-md-3">
+                <p class="company-p">Name</p>
+              </div>
+              <div class="col-md-3">
+                <p class="company-p">Company title</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p class="answer name-amy">Mary Jane</p>
+              </div>
+              <div class="col-md-4">
+                <p class="answer name-amy">Chief Marketing Officer</p>
+              </div>
+              <div class="col-md-5">
+                <div class="pull-right">
+                  <span class="company-p user-recommended">Recommended</span><span class="icon-thumb-up-black-sign thumbs-icon"></span><span class="employee-number">928</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pull-right button-top-col">
+                <button class="btn btn-warning pull-right manage-button" type="button">Make admin</button> <button class="btn btn-warning pull-right manage-button remove" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-2 com-xs-2"><img height="150" src="img/doe.png" width="170"></div>
+          <div class="col-md-10 com-xs-10 user-info">
+            <div class="row">
+              <div class="col-md-3">
+                <p class="company-p">Name</p>
+              </div>
+              <div class="col-md-3">
+                <p class="company-p">Company title</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p class="answer name-amy">Mary Jane</p>
+              </div>
+              <div class="col-md-4">
+                <p class="answer name-amy">Chief Marketing Officer</p>
+              </div>
+              <div class="col-md-5">
+                <div class="pull-right">
+                  <span class="company-p user-recommended">Recommended</span><span class="icon-thumb-up-black-sign thumbs-icon"></span><span class="employee-number">928</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pull-right button-top-col">
+                <button class="btn btn-warning pull-right manage-button" type="button">Make admin</button> <button class="btn btn-warning pull-right manage-button remove" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-2 com-xs-2"><img height="150" src="img/doe.png" width="170"></div>
+          <div class="col-md-10 com-xs-10 user-info">
+            <div class="row">
+              <div class="col-md-3">
+                <p class="company-p">Name</p>
+              </div>
+              <div class="col-md-3">
+                <p class="company-p">Company title</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p class="answer name-amy">Mary Jane</p>
+              </div>
+              <div class="col-md-4">
+                <p class="answer name-amy">Chief Marketing Officer</p>
+              </div>
+              <div class="col-md-5">
+                <div class="pull-right">
+                  <span class="company-p user-recommended">Recommended</span><span class="icon-thumb-up-black-sign thumbs-icon"></span><span class="employee-number">928</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pull-right button-top-col">
+                <button class="btn btn-warning pull-right manage-button" type="button">Make admin</button> <button class="btn btn-warning pull-right manage-button remove" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-2 com-xs-2"><img height="150" src="img/doe.png" width="170"></div>
+          <div class="col-md-10 com-xs-10 user-info">
+            <div class="row">
+              <div class="col-md-3">
+                <p class="company-p">Name</p>
+              </div>
+              <div class="col-md-3">
+                <p class="company-p">Company title</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p class="answer name-amy">Mary Jane</p>
+              </div>
+              <div class="col-md-4">
+                <p class="answer name-amy">Chief Marketing Officer</p>
+              </div>
+              <div class="col-md-5">
+                <div class="pull-right">
+                  <span class="company-p user-recommended">Recommended</span><span class="icon-thumb-up-black-sign thumbs-icon"></span><span class="employee-number">928</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pull-right button-top-col">
+                <button class="btn btn-warning pull-right manage-button" type="button">Make admin</button> <button class="btn btn-warning pull-right manage-button remove" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row center">
+          <div class="show-label">
+            <span class="icon-next2"></span><span class="show-employee">show more employees</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-warning pull-right btn-dashboard" type="button">Invite employee</button>
+          </div>
+        </div>
+      </section>
+    </div><!-- /.container -->
+  </div><!-- /#page-content -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">Home</span></li>
+            <li><span class="">How it works</span></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="footer-ul">
+            <li><span class="">Company</span></li>
+            <li><span class="">FAQs</span></li>
+            <li><span class="">About Us</span></li>
+            <li><span class="">Help</span></li>
+            <li><span class="">Terms and Conditions</span></li>
+            <li><span class="">Privacy Policy</span></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">News</span></li>
+            <li><span class="">News</span></li>
+            <li><span class="">Events</span></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">Contact</span></li>
+            <li><span class="">Advertising</span></li>
+            <li><span class="">Mobile</span></li>
+            <li><span class="">Contact</span></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">Follow Us</span></li>
+            <li>
+              <span class=""></span>
+              <ul class="social-icons">
+                <li><span class=""><span class="icon-linkedin-logo"></span></span></li>
+                <li><span class="icon-google-plus-symbol"></span></li>
+                <li><i class="icon-facebook-logo-button"></i></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

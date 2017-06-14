@@ -1,0 +1,199 @@
+@import "variables";
+
+@font-face {
+  font-family: 'recvolt-icons';
+  src:  url('#{$icomoon-font-path}/recvolt-icons.eot?7kaedl');
+  src:  url('#{$icomoon-font-path}/recvolt-icons.eot?7kaedl#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/recvolt-icons.ttf?7kaedl') format('truetype'),
+    url('#{$icomoon-font-path}/recvolt-icons.woff?7kaedl') format('woff'),
+    url('#{$icomoon-font-path}/recvolt-icons.svg?7kaedl#recvolt-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'recvolt-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location {
+  &:before {
+    content: $icon-location;
+  }
+}
+.icon-rate-star-button {
+  &:before {
+    content: $icon-rate-star-button;
+  }
+}
+.icon-cancel {
+  &:before {
+    content: $icon-cancel;
+  }
+}
+.icon-thumb-up-black-sign {
+  &:before {
+    content: $icon-thumb-up-black-sign;
+  }
+}
+.icon-user-shape {
+  &:before {
+    content: $icon-user-shape;
+  }
+}
+.icon-next {
+  &:before {
+    content: $icon-next;
+  }
+}
+.icon-up-arrow {
+  &:before {
+    content: $icon-up-arrow;
+  }
+}
+.icon-up-arrow_wht {
+  &:before {
+    content: $icon-up-arrow_wht;
+  }
+}
+.icon-6 .path1 {
+  &:before {
+    content: $icon-6-path1;  
+    color: rgb(228, 52, 37);
+  }
+}
+.icon-6 .path2 {
+  &:before {
+    content: $icon-6-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-calendar {
+  &:before {
+    content: $icon-calendar;
+  }
+}
+.icon-dollar {
+  &:before {
+    content: $icon-dollar;
+  }
+}
+.icon-down-arrow {
+  &:before {
+    content: $icon-down-arrow;
+  }
+}
+.icon-down-arrow_wht {
+  &:before {
+    content: $icon-down-arrow_wht;
+  }
+}
+.icon-edit {
+  &:before {
+    content: $icon-edit;
+  }
+}
+.icon-facebook-logo-button {
+  &:before {
+    content: $icon-facebook-logo-button;
+  }
+}
+.icon-google-plus-symbol {
+  &:before {
+    content: $icon-google-plus-symbol;
+  }
+}
+.icon-keyboard-right-arrow-button {
+  &:before {
+    content: $icon-keyboard-right-arrow-button;
+  }
+}
+.icon-linkedin-logo {
+  &:before {
+    content: $icon-linkedin-logo;
+  }
+}
+.icon-lock {
+  &:before {
+    content: $icon-lock;
+  }
+}
+.icon-next2 {
+  &:before {
+    content: $icon-next2;
+  }
+}
+.icon-notification-bell {
+  &:before {
+    content: $icon-notification-bell;
+  }
+}
+.icon-notification-bell-info .path1 {
+  &:before {
+    content: $icon-notification-bell-info-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-notification-bell-info .path2 {
+  &:before {
+    content: $icon-notification-bell-info-path2;  
+    margin-left: -0.8974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-notification-bell-info .path3 {
+  &:before {
+    content: $icon-notification-bell-info-path3;  
+    margin-left: -0.8974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-notification-bell-info .path4 {
+  &:before {
+    content: $icon-notification-bell-info-path4;  
+    margin-left: -0.8974609375em;  
+    color: rgb(235, 65, 36);
+  }
+}
+.icon-or .path1 {
+  &:before {
+    content: $icon-or-path1;  
+    color: rgb(128, 128, 128);
+  }
+}
+.icon-or .path2 {
+  &:before {
+    content: $icon-or-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-or .path3 {
+  &:before {
+    content: $icon-or-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}
+.icon-check-sign {
+  &:before {
+    content: $icon-check-sign;
+  }
+}
+

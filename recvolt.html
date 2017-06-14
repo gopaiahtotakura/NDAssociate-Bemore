@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <script src="http://code.jquery.com/jquery.min.js">
+  </script>
+  <link href="img/Logo-hand.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+  </script>
+  <script src="js/angular.min.js">
+  </script>
+  <script src="js/index.js">
+  </script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="fonts/ie7/ie7.css" rel="stylesheet">
+  <link href="fonts/recvolt-icons/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>RECVOLT</title>
+</head>
+<body ng-app="myApp" ng-controller="profileController as rating">
+ <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container navbar-container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><img src="img/icons/Nav%20Logo.png" style="margin-top: -3px;" width="100"></a>
+      </div>
+      <form class="navbar-form navbar-left" role="form">
+        <div class="form-group profile-search">
+          <div class="left-inner-addon">
+            <span class="icon-search search-icon"></span> <input class="form-control search" placeholder="Search for people, jobs" type="search">
+          </div>
+        </div>
+      </form><!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav profile-info-list">
+        <li class="top">
+          <a href="#"><span class="icon-down-arrow down-icon"></span> <span class="icon-notification-bell notification-smallimg"></span></a> <span class="badge badge-notify">7</span>
+          <ul class="dropdown-menu" style="display:none;">
+            <li class="header">You have 5 notifications</li>
+            <li class="sub-li">
+              <!-- inner menu: contains the actual data -->
+              <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;">
+                <ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                  <li>
+                    <a href="#"><i class="fa fa-users text-aqua"></i> 5 new members joined today</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-users text-red"></i> 5 new members joined</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-shopping-cart text-green"></i> 25 sales made</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-user text-red"></i> You changed your username</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer">
+              <a href="#">View all</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top">
+          <a href="#"><span class="icon-calendar notification-smallimg"></span></a>
+        </li>
+        <li class="profile-name">
+          <a href="#contact"><span>Welcome back John Doe</span> <span class="icon-up-arrow icon up-icon"></span></a>
+        </li>
+      </ul><img class="profile-img" src="img/doe.png"></div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+</header>
+  <div id="page-content">
+    <div class="container main-container">
+      <section class="section-container">
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="section-hedding">COMPLETE YOUR PROFILE</h3>
+          </div>
+          <div class="col-md-4">
+            <span class=" pull-right icon-edit rb-edit"></span>
+          </div>
+        </div>
+        <div class="row profile-row">
+          <div class="col-md-2">
+            <p class="answer name">Mary Jane</p><img height="150" src="img/doe.png" width="150">
+            <p class="star">Rating</p>
+            <div class=" lead">
+              <div star-rating ng-model="rating.ratingprofile1" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+              <span class="span-rating">{{rating.ratingprofile1}}</span> <span class="span-rating rating-number">(based on 1232121 ratings)</span>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <p class="language location">Location</p>
+            <p class="answer angeles">Los Angeles, USA</p>
+            <p class="answer p-content">Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labour et dolore magna aliqua.Ut enim ad minim venim, quis nos-trud exercitation ullamco laboris nisi ut aliquip.</p>
+            <div class="row row-list">
+              <div class="col-md-3">
+                <span>Registered since</span>
+              </div>
+              <div class="col-md-2">
+                <span>Last update</span>
+              </div>
+              <div class="col-md-2">
+                <span>Placements</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"></div>
+          <hr class="hr-line">
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="section-hedding">SPECIALISATION</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 level">
+              <p>Assignment Level</p>
+            </div>
+            <div class="col-md-9 assignment">
+              <p class="answer">Senior Assignment</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 level">
+              <p>Industry Sectors</p>
+            </div>
+            <div class="col-md-9 assignment">
+              <p class="answer">Distribution</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 level">
+              <p>Functional Roles</p>
+            </div>
+            <div class="col-md-9 assignment">
+              <p class="answer">Marketing Distribution Marketing Distribution</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 level">
+              <p>Target Market</p>
+            </div>
+            <div class="col-md-9 assignment">
+              <p class="answer">Germany</p>
+            </div>
+          </div>
+          <hr class="hr-line">
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="section-hedding">JOB EXPERIENCE</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table profile-table">
+                <tr>
+                  <th rowspan="2"><img src="img/google-brand-logo.png" width="100"></th>
+                  <th>Company</th>
+                  <th>Position</th>
+                  <th>Location</th>
+                  <th>Start</th>
+                  <th>End</th>
+                </tr>
+                <tr>
+                  <td>Google</td>
+                  <td>Chief Operating Officer</td>
+                  <td>Mountain View.USA</td>
+                  <td>03/2011</td>
+                  <td>03/2017</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <hr class="hr-line">
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="section-hedding">EDUCATION</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table profile-table">
+                <thead>
+                  <tr>
+                    <th>University</th>
+                    <th>Degree</th>
+                    <th>Specialisation</th>
+                    <th>Start</th>
+                    <th>End</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Chief Operating Officer</td>
+                    <td>Masters in Fine Arts</td>
+                    <td>Paining</td>
+                    <td>03/2001</td>
+                    <td>03/2004</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <hr class="hr-line">
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="section-hedding">LANGUAGES</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="language">Language</p>
+            </div>
+            <div class="col-md-2">
+              <p class="answer">English</p>
+            </div>
+            <div class="col-md-2">
+               <div star-rating ng-model="rating.ratingprofile2" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+            </div>
+            <div class="col-md-2">
+              <p class="language intermediate">Intermediate</p>
+            </div>
+          </div>
+          <hr class="hr-line">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-hedding">PERSONAL SKILLS</h3>
+            </div>
+            <div class="col-md-12">
+              <p class="language">Distribution</p>
+            </div>
+          </div>
+          <hr class="hr-line">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-hedding">PERSONAL INTERESTS</h3>
+            </div>
+            <div class="col-md-12">
+              <p class="language">Logistics and Transportation,Marketing</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button class="btn btn-warning pull-right btn-dashboard" type="button">Return to dashboard</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!-- /.container -->
+  </div><!-- /#page-content -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">Home</span></li>
+            <li><span class="">How it works</span></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="footer-ul">
+            <li><span class="">Company</span></li>
+            <li><span class="">FAQs</span></li>
+            <li><span class="">About Us</span></li>
+            <li><span class="">Help</span></li>
+            <li><span class="">Terms and Conditions</span></li>
+            <li><span class="">Privacy Policy</span></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">News</span></li>
+            <li><span class="">News</span></li>
+            <li><span class="">Events</span></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">Contact</span></li>
+            <li><span class="">Advertising</span></li>
+            <li><span class="">Mobile</span></li>
+            <li><span class="">Contact</span></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="footer-ul">
+            <li><span class="">Follow Us</span></li>
+            <li>
+              <span class=""></span>
+              <ul class="social-icons">
+                <li><span class=""><span class="icon-linkedin-logo"></span></span></li>
+                <li><span class="icon-google-plus-symbol"></span></li>
+                <li><i class="icon-facebook-logo-button"></i></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
